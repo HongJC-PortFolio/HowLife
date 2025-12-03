@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.title("HowLife Streamlit Cloud 테스트")
-st.write("Streamlit Cloud에서 바로 실행되는지 Test!")
+st.title("HowLife 테스트 페이지")
+st.write("이 페이지가 Streamlit Cloud에서 실행되면 성공입니다!")
