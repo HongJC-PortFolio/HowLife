@@ -1,4 +1,5 @@
 import streamlit as st
 
-st.title("HowLife 테스트 페이지")
-st.write("이 페이지가 Streamlit Cloud에서 실행되면 성공입니다!")
+st.title("메인 페이지 테스트")
+
+st.write("이 화면이 보이면 app.py는 정상입니다.")
