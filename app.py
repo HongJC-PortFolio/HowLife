@@ -56,62 +56,56 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------------------------------------------
-# 오늘의 목표 전체 컨테이너
-# ---------------------------------------------------
+# ---------------------- 제목 ---------------------- #
 st.markdown("""
-    <h3 style="text-align:center; margin-bottom:20px;">
-        오늘의 목표<br>- 물 / 영양제 / 운동 요약 -
-    </h3>
+    <h2 style='text-align:center;'>오늘의 목표<br>- 물 / 영양제 / 운동 요약 -</h2>
 """, unsafe_allow_html=True)
 
-outer_box = """
-    border: 2px solid #333;
+# ---------------------- 오늘의 목표 전체 박스 ---------------------- #
+st.markdown("""
+<div style="
+    border: 2px solid #444;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 30px;
-"""
+">
+""", unsafe_allow_html=True)
 
-st.markdown(f"<div style='{outer_box}'>", unsafe_allow_html=True)
+# 박스 내부 2개 컬럼
+left, right = st.columns([0.4, 0.6])
 
-col_left, col_right= st.columns([0.4,0.6])
-
-
-# ---------------------------------------------------
-# left : 물 / 영양제 / 운동
-# ---------------------------------------------------
-with col_left:
-    box = """
-        border:2px solid #444; 
-        padding:12px; 
-        border-radius:6px; 
-        margin-bottom:15px; 
+# ---------------------- 왼쪽 : 리스트 ---------------------- #
+with left:
+    item_box = """
+        border:2px solid #888;
+        padding:14px;
+        border-radius:8px;
+        margin-bottom:18px;
         font-size:18px;
     """
 
-    st.markdown(f"<div style='{box}'><b>물 :</b> 850ml / 2000ml</div>", unsafe_allow_html=True)
-    st.markdown(f"<div style='{box}'><b>영양제 :</b> 3 / 5</div>", unsafe_allow_html=True)
-    st.markdown(f"<div style='{box}'><b>운동 :</b> 25m / 60m</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='{item_box}'><b>물 :</b> 850ml / 2000ml</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='{item_box}'><b>영양제 :</b> 3 / 5</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='{item_box}'><b>운동 :</b> 25m / 60m</div>", unsafe_allow_html=True)
 
 
-# ---------------------------------------------------
-# center : 오늘의 통합 목표 달성도
-# ---------------------------------------------------
-with col_right:
+# ---------------------- 오른쪽 : 오늘의 통합 목표 달성도 ---------------------- #
+with right:
     st.markdown("""
         <div style="
-            border:2px solid #444;
-            padding:20px;
-            border-radius:8px;
+            border:2px solid #888;
+            border-radius:10px;
+            padding: 20px;
             text-align:center;
+            height: 300px;
         ">
-            <b>오늘의 통합 목표 달성도</b><br><br>
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="120">
+            <h4>오늘의 통합 목표 달성도</h4>
+            <br>
+            <img src="https://cdn-icons-png.flaticon.com/512/194/194279.png" width="140">
         </div>
     """, unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
-
+st.markdown("</div>", unsafe_allow_html=True)   # 큰 박스 닫기
 # ---------------------------------------------------
 # AI 피드백 + 응원과 격려
 # ---------------------------------------------------
