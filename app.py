@@ -80,6 +80,7 @@ with left:
         border:2px solid #888;
         padding:14px;
         border-radius:8px;
+        text-align:center;
         margin-bottom:18px;
         height: 89px;
         font-size:18px;
