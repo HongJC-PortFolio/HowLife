@@ -37,7 +37,85 @@ with con1:
 st.markdown(ai_insight_html, unsafe_allow_html=True)
 
 with con2:
-       st.header('2')
+       st.markdown("<br>", unsafe_allow_html=True)
+
+# 큰 박스 전체를 감싸는 틀
+today_goal_html = """<div style="
+    border: 2px solid #7e7e7e;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+">
+    <h3 style="text-align:center; margin-bottom: 20px;">
+        오늘의 목표 - 물 / 영양제 / 운동 요약
+    </h3>
+</div>
+"""
+
+# 먼저 틀만 표시
+st.markdown(today_goal_html, unsafe_allow_html=True)
+
+# -----------------------------
+# 박스 내부에 4개의 칼럼 위치시키기
+# (물 / 영양제 / 운동 / 오늘의 달성도)
+# -----------------------------
+col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+
+# ★ 1) 물 박스
+with col1:
+    st.markdown("""
+    <div style="
+        border: 1.5px solid #b4b4b4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    ">
+        <h4>물</h4>
+        <p>850ml / 2000ml</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ★ 2) 영양제 박스
+with col2:
+    st.markdown("""
+    <div style="
+        border: 1.5px solid #b4b4b4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    ">
+        <h4>영양제</h4>
+        <p>3 / 5</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ★ 3) 운동 박스
+with col3:
+    st.markdown("""
+    <div style="
+        border: 1.5px solid #b4b4b4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    ">
+        <h4>운동</h4>
+        <p>25m / 60m</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ★ 4) 오늘의 통합 목표 달성도 박스
+with col4:
+    st.markdown("""
+    <div style="
+        border: 1.5px solid #b4b4b4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    ">
+        <h4>오늘의 통합 목표 달성도</h4>
+        <p>🌳</p>  <!-- 나중에 tree.png 넣을 예정 -->
+    </div>
+    """, unsafe_allow_html=True)
 
 with con3:
       st.header('3')
