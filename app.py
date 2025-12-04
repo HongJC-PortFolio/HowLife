@@ -11,8 +11,7 @@ with empty1:
       st.empty()
 
 with con1:
-      ai_insight_html = """
-<div style="
+    ai_insight_html = """<div style="
     border: 2px solid #7e7e7e;
     padding: 25px 30px;
     border-radius: 12px;
@@ -33,8 +32,7 @@ with con1:
     ">
         Ex) 물 마시지 않은 지 3시간이 지났어요. 목이 건조해지지 않게 물 한 잔 어떠세요?
     </p>
-</div>
-"""
+</div>"""
 
 st.markdown(ai_insight_html, unsafe_allow_html=True)
 
