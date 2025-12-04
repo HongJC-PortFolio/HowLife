@@ -1,4 +1,4 @@
 import streamlit as st
 
     st.title("📝 기록")
-st.write("기록 페이지입니다. 물/영양제/운동 기록 UI가 들어갈 곳입니다.")
+    st.write("기록 페이지입니다. 물/영양제/운동 기록 UI가 들어갈 곳입니다.")
