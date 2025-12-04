@@ -56,10 +56,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------------- 제목 ---------------------- #
-st.markdown("""
-    <h2 style='text-align:center;'>오늘의 목표<br>- 물 / 영양제 / 운동 요약 -</h2>
-""", unsafe_allow_html=True)
 
 # ---------------------- 오늘의 목표 전체 박스 ---------------------- #
 st.markdown("""
