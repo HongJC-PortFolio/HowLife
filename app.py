@@ -48,6 +48,7 @@ st.markdown("""
         padding: 20px;
         border-radius: 8px;
         font-size: 18px;
+        text-align:center;
         margin-bottom: 35px;">
         <b>AI의 오늘 행동 제안 ( AI Today Insight )</b><br><br>
         Ex) 물 마시지 않은 지 3시간이 지났어요. 목이 건조하지 않게 물 한 잔 어때요?
@@ -73,7 +74,7 @@ outer_box = """
 
 st.markdown(f"<div style='{outer_box}'>", unsafe_allow_html=True)
 
-col_left, col_center, col_right = st.columns([0.4, 0.33, 0.27])
+col_left, col_right= st.columns([0.4,0.6])
 
 
 # ---------------------------------------------------
@@ -96,7 +97,7 @@ with col_left:
 # ---------------------------------------------------
 # center : 오늘의 통합 목표 달성도
 # ---------------------------------------------------
-with col_center:
+with col_right:
     st.markdown("""
         <div style="
             border:2px solid #444;
@@ -109,26 +110,26 @@ with col_center:
         </div>
     """, unsafe_allow_html=True)
 
-
-# ---------------------------------------------------
-# right : AI 전날 피드백 + 응원
-# ---------------------------------------------------
-with col_right:
-    st.markdown("""
-        <div style="
-            border:2px solid #444;
-            padding:20px;
-            border-radius:8px;
-            text-align:center;
-        ">
-            <b>AI의 전 날 피드백<br>+ 응원과 격려</b><br><br>
-            <img src="https://cdn-icons-png.flaticon.com/512/2883/2883825.png" width="110">
-        </div>
-    """, unsafe_allow_html=True)
-
-
 st.markdown("</div>", unsafe_allow_html=True)
 
+# ---------------------------------------------------
+# AI 피드백 + 응원과 격려
+# ---------------------------------------------------
+
+st.markdown("""
+    <div style="
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align:center;
+        font-size:20px;
+    ">
+    <b>AI의 전 날 피드백<br>+ 응원과 격려</b><br><br>
+    <img src="https://cdn-icons-png.flaticon.com/512/2883/2883825.png" width="110">
+    </div>
+""", unsafe_allow_html=True)
 
 # ---------------------------------------------------
 # 주간 꾸준함 미니 달력
