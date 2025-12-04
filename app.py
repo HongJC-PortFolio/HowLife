@@ -81,6 +81,7 @@ with left:
         padding:14px;
         border-radius:8px;
         margin-bottom:18px;
+        height: 300px;
         font-size:18px;
     """
 
