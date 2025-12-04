@@ -1,7 +1,7 @@
+
+import streamlit as st
 from tkinter.tix import COLUMN
 from pyparsing import empty
-import streamlit as st
-import time
 
 st.title("HowLife - 당신의 꾸준함, AI가 함께 만듭니다.")
 st.set_page_config(layout="wide")
