@@ -11,7 +11,6 @@ with empty1:
       st.empty()
 
 with con1:
-      st.header('1')
       ai_insight_html = """
 <div style="
     border: 2px solid #7e7e7e;
