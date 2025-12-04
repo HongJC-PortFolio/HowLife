@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title("HowLife - 당신의 꾸준함, AI가 함께 만듭니다.")
 
+tab1,tab2,tab3,tab4=st.tabs(['aiInsight','todayGoals','aiFeedback&Cheers','weekGraph'])
+
 with tab1:
       st.header('AI의 오늘 행동 제안 ( AI Today Insight )')
 
