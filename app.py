@@ -52,9 +52,6 @@ today_goal_html = """<div style="
 </div>
 """
 
-# 먼저 틀만 표시
-st.markdown(today_goal_html, unsafe_allow_html=True)
-
 # -----------------------------
 # 박스 내부에 4개의 칼럼 위치시키기
 # (물 / 영양제 / 운동 / 오늘의 달성도)
@@ -116,6 +113,7 @@ with col4:
         <p>🌳</p>  <!-- 나중에 tree.png 넣을 예정 -->
     </div>
     """, unsafe_allow_html=True)
+st.markdown(today_goal_html, unsafe_allow_html=True)
 
 with con3:
       st.header('3')
