@@ -8,7 +8,7 @@ empty1, con2, con3,empty2=st.columns([0.3,0.7,0.3,0.3])
 empty1,con4,empty2=st.columns([0.3,1.0,0.3])
 
 with empty1:
-      empty()
+      st.empty()
 
 with con1:
       st.header('AI의 오늘 행동 제안 ( AI Today Insight )')
@@ -23,7 +23,7 @@ with con4:
       st.header('주간 꾸준함')
 
 with empty2:
-      empty()
+      st.empty()
 
 
 
