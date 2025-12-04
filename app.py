@@ -11,16 +11,16 @@ with empty1:
       st.empty()
 
 with con1:
-      st.header('AI의 오늘 행동 제안 ( AI Today Insight )')
+      st.header('1')
 
 with con2:
-       st.header('오늘의 목표 - 물 / 영양제 / 운동 요약')
+       st.header('2')
 
 with con3:
-      st.header('AI의 전 날 피드백 + 응원과 격려')
+      st.header('3')
 
 with con4:
-      st.header('주간 꾸준함')
+      st.header('4')
 
 with empty2:
       st.empty()
